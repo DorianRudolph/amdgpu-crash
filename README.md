@@ -9,7 +9,7 @@ Full output of `journalctl --boot <id>`
 ### [crash1.txt](crash1.txt)
 
 <details>
-<summary>Relevant? excerpt</summary>
+<summary>Relevant(?) excerpt</summary>
 
 ```
 Jan 06 14:37:38 archdesktop kernel: [drm:gfx_v10_0_priv_reg_irq [amdgpu]] *ERROR* Illegal register access in command stream
@@ -150,6 +150,19 @@ Jan 06 14:37:40 archdesktop kernel: [drm:dc_add_plane_to_context [amdgpu]] *ERRO
 ``` 
 </details>
 
-[crash2.txt](crash2.txt)
+### [crash2.txt](crash2.txt)
 
-##
+The second log does not have the "cut here" part. It ends with
+
+```
+Jan 06 14:52:49 archdesktop kernel: [drm:gfx_v10_0_priv_reg_irq [amdgpu]] *ERROR* Illegal register access in command stream
+Jan 06 14:52:49 archdesktop kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring gfx_0.0.0 timeout, signaled seq=502030, emitted seq=502032
+Jan 06 14:52:49 archdesktop kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* Process information: process physics pid 35368 thread physics pid 35368
+Jan 06 14:52:49 archdesktop kernel: amdgpu 0000:0b:00.0: amdgpu: GPU reset begin!
+Jan 06 14:52:50 archdesktop kernel: amdgpu 0000:0b:00.0: amdgpu: free PSP TMR buffer
+Jan 06 14:52:50 archdesktop /usr/lib/gdm-wayland-session[4904]: amdgpu: The CS has been rejected (-125), but the context isn't robust.
+Jan 06 14:52:50 archdesktop /usr/lib/gdm-wayland-session[4904]: amdgpu: The process will be terminated.
+Jan 06 14:52:51 archdesktop konsole[13430]: The Wayland connection broke. Did the Wayland compositor die?
+Jan 06 14:52:51 archdesktop konsole[7984]: The Wayland connection broke. Did the Wayland compositor die?
+Jan 06 14:52:51 archdesktop chromium[11311]: Error reading events from display: Broken pipe
+```
