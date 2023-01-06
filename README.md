@@ -1,6 +1,23 @@
-This repository documents a reproducible amdgpu crash.
+This repository documents a reproducible amdgpu crash with MESA RADV drivers.
 
+This repo is forked from this [skulpin PR](https://github.com/aclysma/skulpin/pull/112).
 [ORIGINAL README](README.orig.md)
+
+## Running
+
+Since I'm using a git version of the skia-safe crate, some dependencies may be required to build skia as no prebuilt is available ((see)[https://github.com/rust-skia/rust-skia#on-linux]).
+
+```
+AMD_VULKAN_ICD=RADV WINIT_UNIX_BACKEND=x11 cargo run --example physics --features="winit-app winit-25" --release
+```
+
+I'm letting this window float with the following sway config:
+
+```
+for_window [title="^Skulpin$"] floating enable
+```
+
+## Setup
 
 ## Crash logs
 
