@@ -1,0 +1,3 @@
+# [target.x86_64-unknown-linux-gnu]
+# rustflags = ["-Ctarget-cpu=native", "-Zinstrument-mcount", "-Cpasses=ee-instrument<post-inline>"]
+# rustflags = ["-Zinstrument-mcount", "-Cpasses=ee-instrument<post-inline>"]
