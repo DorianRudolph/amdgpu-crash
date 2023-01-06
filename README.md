@@ -9,7 +9,8 @@ Full output of `journalctl --boot <id>`
 ### [crash1.txt](crash1.txt)
 
 <details>
-<summary>[crash1.txt](crash1.txt)</summary>
+<summary>Relevant? excerpt</summary>
+
 ```
 Jan 06 14:37:38 archdesktop kernel: [drm:gfx_v10_0_priv_reg_irq [amdgpu]] *ERROR* Illegal register access in command stream
 Jan 06 14:37:38 archdesktop kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring gfx_0.0.0 timeout, signaled seq=516877, emitted seq=516879
